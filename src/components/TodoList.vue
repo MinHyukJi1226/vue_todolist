@@ -3,7 +3,7 @@
         <ul>
             <li v-for="(todoItem, index) in propsdata" :key="todoItem"> 
                 {{ todoItem }}
-                <button type="button" v-on:click="removeTodo(todoItem, index)">삭제</button>
+                <button class="removeBtn" type="button" v-on:click="removeTodo(todoItem, index)">삭제</button>
             </li>
         </ul>
     </section>
@@ -19,3 +19,11 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+
+ul {
+    list-style: none;
+}
+
+</style>

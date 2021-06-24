@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="input">
         <input type="text" v-model="newTodoItem" v-on:keyup.enter="addTodo">
         <button v-on:click="addTodo">추가</button>
     </div>
